@@ -41,10 +41,7 @@ st.markdown("""
     <div class="cat-box">
         <h2>CAT : CleanData Automation Tool</h2>
         <p>
-            Get ready to clean your data effortlessly — remove empty rows and columns, trim whitespaces,
-            standardize column names, correct data types, handle missing values, eliminate duplicates,
-            fix inconsistent categories, tidy up text, auto-tag descriptions using AI, log every transformation,
-            and export a polished Excel or CSV file — all with just one click.
+            Get ready to clean your data effortlessly remove empty rows and columns, trim whitespaces, standardize column names, correct data types, handle missing values, eliminate duplicates, fix inconsistent categories, tidy up text, auto-tag descriptions using AI, log every transformation, and export a polished Excel or CSV file all with just one click.
         </p>
         <h4>Upload your Excel or CSV file</h4>
     </div>
