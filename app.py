@@ -81,7 +81,7 @@ with col2:
 
         # 🔗 POST to your n8n webhook
         try:
-            response = requests.post("http://localhost:5678/webhook/hati", files=files)
+            response = requests.post("https://areebahmad22.app.n8n.cloud/webhook/cat/clean", files=files)
             if response.ok:
                 st.success("🎉 File cleaned successfully!")
                 st.download_button(
