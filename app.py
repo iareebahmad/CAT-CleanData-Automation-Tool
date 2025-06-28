@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 
-# --- Streamlit Page Settings ---
 st.set_page_config(
     page_title="CAT - CleanData Automation Tool",
     page_icon="🐱",
@@ -9,7 +8,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# --- Title & Intro Text (styled) ---
 st.markdown("""
     <style>
         .cat-box {
@@ -47,10 +45,8 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# --- Spacer ---
 st.markdown("<br>", unsafe_allow_html=True)
 
-# --- Upload Section Centered ---
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
@@ -70,7 +66,7 @@ with col2:
             else "text/csv"
         )
 
-        # Prepare file
+
         files = {
             'file': (
                 uploaded_file.name,
@@ -79,13 +75,13 @@ with col2:
             )
         }
 
-        # 🔗 POST to your n8n webhook
+
         try:
             response = requests.post("https://areebahmad22.app.n8n.cloud/webhook-test/cat/clean", files=files)
             if response.ok:
-                st.success("🎉 File cleaned successfully!")
+                st.success("File cleaned successfully!")
                 st.download_button(
-                    label="📥 Download Cleaned File",
+                    label="Download Cleaned File",
                     data=response.content,
                     file_name="Cleaned_Output.xlsx"
                 )
